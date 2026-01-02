@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weaher Project - weekly</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="weekly.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>WEATHER</h1>
+        </div>
+        <div class="search-bar">
+            <input class="input-box" placeholder="Search City" type="text">
+            <select class="dropdown">
+                <option class="value">Celsius </option>
+                <option class="value">Fahrenheit </option>
+            </select>
+            <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <ul>
+            <li>
+                <a href="current.html">Current</a>
+            </li>
+            <li>
+                <a href="hourly.html">Hourly</a>
+            </li>
+            <li>
+                <a href="weekly.html" class="active-page">Weekly</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--   weekly weather   -->
+    <div class="heading"></div>
+    <div class="container">
+        <p class="welcome-para">search weather</p>
+        <div class="loading-icon"></div>
+    </div>
+    <div class="info-container">
+        <div class="weather-info"></div>
+
+        <div class="air-quality-info"></div>
+    </div>
+
+    <script src="weekly.js"></script>
+</body>
+
+</html>

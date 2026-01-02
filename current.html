@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weaher Project - Current</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="current.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>WEATHER</h1>
+        </div>
+        <div class="search-bar">
+            <input class="input-box" placeholder="Search City" type="text">
+            <select class="dropdown">
+                <option class="value">Celsius </option>
+                <option class="value">Fahrenheit </option>
+            </select>
+            <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <a href="current.html" class="active-page">Current</a>
+            </li>
+            <li>
+                <a href="hourly.html">Hourly</a>
+            </li>
+            <li>
+                <a href="weekly.html">Weekly</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--   currrent weather   -->
+    <div class="current-weather">
+        <div class="table-cont">
+            <P class="head-para">Some Popular Cities</P>
+            <table border="1" class="table">
+                <thead class="thead">
+                    <tr>
+                        <th>City</th>
+                        <th>Temperature</th>
+                        <th>Wind-speed</th>
+                        <th>Day/Night</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody">
+                    <tr>
+                        <td class="pop-city">dubai</td>
+                        <td class="pop-temp"></td>
+                        <td class="pop-wind"></td>
+                        <td class="pop-day"></td>
+                    </tr>
+                    <tr>
+                        <td class="pop-city">dubai</td>
+                        <td class="pop-temp"></td>
+                        <td class="pop-wind"></td>
+                        <td class="pop-day"></td>
+                    </tr>
+                    <tr>
+                        <td class="pop-city">dubai</td>
+                        <td class="pop-temp"></td>
+                        <td class="pop-wind"></td>
+                        <td class="pop-day"></td>
+                    </tr>
+                    <tr>
+                        <td class="pop-city">dubai</td>
+                        <td class="pop-temp"></td>
+                        <td class="pop-wind"></td>
+                        <td class="pop-day"></td>
+                    </tr>
+                    <tr>
+                        <td class="pop-city">dubai</td>
+                        <td class="pop-temp"></td>
+                        <td class="pop-wind"></td>
+                        <td class="pop-day"></td>
+                    </tr>
+                    <tr>
+                        <td class="pop-city">dubai</td>
+                        <td class="pop-temp"></td>
+                        <td class="pop-wind"></td>
+                        <td class="pop-day"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="pop-cities-set">Edit Favorite Cities</button>
+        </div>
+        <div class="container">
+
+            <div class="loading-icon"></div>
+            <P class="welcome">Search weather</P>
+            <img class="img-icon" src="" alt="image icon">
+            <div class="info">
+                <img class="temp-img" src="hot.png">
+                <div class="temp-val"></div>
+                <div class="city"></div>
+            </div>
+            <div class="extras">
+                <img class="wind-img" src="wind.png">
+                <p class="wind-para"></p>
+
+            </div>
+        </div>
+    </div>
+    <script src="current.js"></script>
+</body>
+
+</html>

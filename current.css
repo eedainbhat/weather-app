@@ -1,0 +1,145 @@
+.current-weather {
+    display: flex;
+    margin-top: 5rem;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.table-cont {
+    color: black;
+    height: 60vh;
+    width: 50rem;
+    text-align: center;
+}
+
+.head-para {
+    color: black;
+    font-size: 2rem;
+}
+
+.table {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 2rem 0px,
+        rgba(0, 0, 0, 0.3) 0px 0px 10px 0px;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    border: 3px solid black;
+    border-collapse: collapse;
+    height: 50vh;
+    width: 50rem;
+}
+
+.table tbody {
+    text-transform: capitalize;
+}
+
+.pop-cities-set{
+    height: 4rem;
+    width: 15rem;
+    font-size: 1.5rem;
+    background-color: #0000001b;
+    border: none;
+    border-radius: 5px;
+    margin-top: 2rem;
+    transition: transform .2s ease-out;
+}
+
+.pop-cities-set:active{
+     background-color: #00000030;
+    transform: scale(.95);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #73c2c2 0%, #aa92e6 100%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 2rem 0px,
+        rgba(0, 0, 0, 0.3) 0px 0px 10px 0px;
+    padding: 1.4rem;
+    height: 33rem;
+    width: 35rem;
+    gap: 5rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+.welcome {
+    font-size: 2rem;
+}
+
+
+.loading-icon {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border: 5px solid black;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.img-icon {
+    height: 5rem;
+    display: flex;
+    margin: 2rem 0 4rem 0;
+    justify-self: center;
+    margin: 1rem 3rem  0 3rem;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+     margin: .5rem 0 .5rem 0;
+}
+
+.temp-val {
+    font-size: 2.1rem;
+}
+
+.temp-img {
+    margin-right: .3rem;
+    height: 2rem;
+}
+
+.city {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-left: 2rem;
+}
+
+.wind-img {
+    height: 5rem;
+}
+
+.extras {
+    font-size: 1.3rem;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 2rem 0 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.table-editing-active{
+    border: 3px dashed #00bbff;
+}
